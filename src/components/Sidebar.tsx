@@ -43,7 +43,7 @@ const Sidebar = () => {
                     </nav>
 
                     <div className="mt-30">
-                        <p className="pb-2">Sociales</p>
+                        <p className="pb-2">Redes Sociales</p>
                         <div className="flex gap-3 text-neutral-500">
                             {socialLinks.map((social, i) => {
                                 const Icon = social.icon;

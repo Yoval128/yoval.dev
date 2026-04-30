@@ -19,10 +19,9 @@ export type ExperienceType = {
     desc: string;
 };
 
-export type ServiceType = {
+export type AreasType = {
     title: string;
     desc: string;
-    projects: string;
     icon: JSX.Element;
 };
 
