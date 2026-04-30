@@ -7,6 +7,7 @@ export const App = () => {
         lg:pl-0 lg:max-w-6xl'>
             <Hero/>
             <Stats/>
+            <Projects/>
         </main>
     )
 }

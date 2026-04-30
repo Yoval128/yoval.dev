@@ -214,16 +214,16 @@ const services: ServiceType[] = [
 
 const statsData: StatsType[] = [
     {
-        number: '30+',
-        label: 'Happy Clients',
+        number: '10+',
+        label: 'Proyectos desarrollados',
     },
     {
-        number: '05+',
-        label: 'Years Of Experience',
+        number: '3+',
+        label: 'Tecnologías utilizadas',
     },
     {
-        number: '50+',
-        label: 'Projects Done',
+        number: '100%',
+        label: 'Compromiso con el aprendizaje',
     },
 ];
 
