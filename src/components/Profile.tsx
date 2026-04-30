@@ -17,11 +17,11 @@ const Profile = () => {
                object-cover'/>
                 <div className="mt-6">
                     <p className="text-sm text-neutral-300">Especialización: </p>
-                    <p className="text-lg capitalize">UI/UX designer and fronted developer</p>
+                    <p className="text-lg capitalize">Aplicaciones web, integrar APIs y desarrollar soluciones escalables</p>
                 </div>
                 <div>
-                    <p className="text-sm text-neutral-300">Based in:</p>
-                    <p className="text-lg capitalize">Base in Los Angeles</p>
+                    <p className="text-sm text-neutral-300">Ubicado en:</p>
+                    <p className="text-lg capitalize">Lerma, Estado de México</p>
                 </div>
 
                 <div className="flex gap-3 pt-2 text-neutral-500">
