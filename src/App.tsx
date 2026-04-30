@@ -1,5 +1,6 @@
 import Hero from "@/components/Hero.tsx";
 import Stats from "@/components/Stats.tsx";
+import Projects from "@/components/Projects.tsx";
 
 export const App = () => {
     return (
