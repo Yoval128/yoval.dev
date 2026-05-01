@@ -11,7 +11,7 @@ const Sidebar = () => {
     return (
         <>
             <Sheet>
-                <SheetTrigger asChild>
+                <SheetTrigger>
                     <Button
                         variant="ghost"
                         size="icon"
@@ -33,8 +33,13 @@ const Sidebar = () => {
                             const Icon = link.icon;
 
                             return (
-                                <a href={link.link}>
-                                    <Icon/>
+                                <a
+                                    key={link.link}
+                                    href={link.link}
+                                    onClick={() => setActive(link.link)}
+                                    className={active === link.link ? "text-primary" : ""}
+                                >
+                                    <Icon />
                                     {link.label}
                                 </a>
                             );

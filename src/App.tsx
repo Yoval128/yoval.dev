@@ -14,15 +14,18 @@ export const App = () => {
     const lenis = useLenis();
 
     useEffect(() => {
+        if (!lenis) return;
+
+        let frame: number;
 
         const raf = (time: number) => {
-
             lenis.raf(time);
-            requestAnimationFrame(raf);
+            frame = requestAnimationFrame(raf);
         };
 
-        requestAnimationFrame(raf);
+        frame = requestAnimationFrame(raf);
 
+        return () => cancelAnimationFrame(frame);
     }, [lenis]);
 
     return (

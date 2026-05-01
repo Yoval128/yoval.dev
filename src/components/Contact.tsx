@@ -16,7 +16,7 @@ type contactFormValues = {
     message: string,
 }
 const Contact = () => {
-        const form = useForm<ContactFormValues>({
+        const form = useForm<contactFormValues>({
             defaultValues: {
                 name: '',
                 company: '',
@@ -26,7 +26,7 @@ const Contact = () => {
             } // Se eliminó el punto y coma erróneo que tenías aquí
         });
 
-        const onSubmit = (values: ContactFormValues) => {
+        const onSubmit = (values: contactFormValues) => {
             console.log(values);
         };
 
@@ -54,7 +54,7 @@ const Contact = () => {
                                 aria-invalid={!!form.formState.errors.name}/>
                             {form.formState.errors.name && (
                                 <FieldError>
-                                    {form.formState.errors.name.massege}
+                                    {form.formState.errors.name.message}
                                 </FieldError>
                             )}
                         </Field>
@@ -67,7 +67,7 @@ const Contact = () => {
                                 aria-invalid={!!form.formState.errors.company}/>
                             {form.formState.errors.company && (
                                 <FieldError>
-                                    {form.formState.errors.company.massege}
+                                    {form.formState.errors.company.message}
                                 </FieldError>
                             )}
                         </Field>
@@ -81,7 +81,7 @@ const Contact = () => {
                                 aria-invalid={!!form.formState.errors.email}/>
                             {form.formState.errors.email && (
                                 <FieldError>
-                                    {form.formState.errors.email.massege}
+                                    {form.formState.errors.email.message}
                                 </FieldError>
                             )}
                         </Field>

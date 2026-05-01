@@ -29,10 +29,10 @@ const Hero = () => {
                 resolver problemas reales.
             </motion.p>
             <motion.div variants={fadeUp} className='mt-5 flex gap-2'>
-                <Button asChild>
+                <Button>
                     <a href="#projects">Mis proyectos</a>
                 </Button>
-                <Button asChild variant='outline'>
+                <Button variant='outline'>
                     <a href="/docs/CV_OmarYovalAviles.pdf" download>
                         Descargar CV
                     </a>
