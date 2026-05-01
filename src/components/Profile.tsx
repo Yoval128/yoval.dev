@@ -18,9 +18,9 @@ const Profile = () => {
                object-cover'/>
 
                 <div className="mt-6">
-                    <p className="text-sm text-neutral-300">Especialización: </p>
-                    <p className="text-lg capitalize">Aplicaciones web, integrar APIs y desarrollar soluciones
-                        escalables</p>
+                    <p className='text-neutral-400'>
+                        Fullstack Developer Jr | Backend-focused
+                    </p>
                 </div>
                 <div>
                     <p className="text-sm text-neutral-300">Ubicado en:</p>

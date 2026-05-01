@@ -18,16 +18,25 @@ const Hero = () => {
                 <SparkleIcon size={15}/>
                 <span> Introducción </span>
             </motion.p>
-
-            <motion.h1 variants={fadeUp} className='text-4xl md:text-5xl
-            lg:text-6xl font-semibold capitalize mt-2 max-w-3x1 md:leading-16'>
-                Soy <span className='text-primary'>Omar Yoval Aviles</span>, desarrollador fullstack junior
+            <motion.h1
+                variants={fadeUp}
+                className='text-4xl md:text-5xl lg:text-6xl font-semibold mt-2 max-w-3xl md:leading-16'>
+                Desarrollo sistemas, APIs y soluciones que automatizan procesos y gestionan información multiplataforma
             </motion.h1>
+
+            <motion.p variants={fadeUp} className='mt-4 text-neutral-400 max-w-2xl'>
+                Enfocado en Laravel, Node.js y bases de datos, construyendo aplicaciones funcionales y escalables para
+                resolver problemas reales.
+            </motion.p>
             <motion.div variants={fadeUp} className='mt-5 flex gap-2'>
                 <Button asChild>
                     <a href="#projects">Mis proyectos</a>
                 </Button>
-                <Button variant='outline'>Descargar CV</Button>
+                <Button asChild variant='outline'>
+                    <a href="/docs/CV_OmarYovalAviles.pdf" download>
+                        Descargar CV
+                    </a>
+                </Button>
             </motion.div>
         </motion.section>
     )

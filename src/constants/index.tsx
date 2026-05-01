@@ -30,6 +30,22 @@ import {
     User,
 } from 'lucide-react';
 
+import {
+    SiJavascript,
+    SiTypescript,
+    SiReact,
+    SiNodedotjs,
+    SiExpress,
+    SiLaravel,
+    SiPhp,
+    SiMysql,
+    SiMongodb,
+    SiTailwindcss,
+    SiGit,
+    SiGithub,
+    SiLinux,
+} from 'react-icons/si';
+
 import {FaGithub, FaLinkedin} from 'react-icons/fa';
 
 const navLinks: LinksType[] = [
@@ -144,66 +160,20 @@ const experience: ExperienceType[] = [
 ];
 
 const tools: ToolsType[] = [
-    {
-        label: 'JavaScript',
-        imgSrc: '/images/tools/javascript.svg',
-    },
-    {
-        label: 'TypeScript',
-        imgSrc: '/images/tools/typescript.svg',
-    },
-    {
-        label: 'React',
-        imgSrc: '/images/tools/react.svg',
-    },
-    {
-        label: 'React Native',
-        imgSrc: '/images/tools/react.svg', // puedes cambiarlo si tienes icono propio
-    },
-    {
-        label: 'Node.js',
-        imgSrc: '/images/tools/nodejs.svg',
-    },
-    {
-        label: 'Express.js',
-        imgSrc: '/images/tools/expressjs.svg',
-    },
-    {
-        label: 'Laravel',
-        imgSrc: '/images/tools/laravel.svg',
-    },
-    {
-        label: 'PHP',
-        imgSrc: '/images/tools/php.svg',
-    },
-    {
-        label: 'MySQL',
-        imgSrc: '/images/tools/mysql.svg',
-    },
-    {
-        label: 'SQL Server',
-        imgSrc: '/images/tools/sqlserver.svg',
-    },
-    {
-        label: 'MongoDB',
-        imgSrc: '/images/tools/mongodb.svg',
-    },
-    {
-        label: 'Tailwind CSS',
-        imgSrc: '/images/tools/tailwindcss.svg',
-    },
-    {
-        label: 'Git',
-        imgSrc: '/images/tools/git.svg',
-    },
-    {
-        label: 'GitHub',
-        imgSrc: '/images/tools/github.svg',
-    },
-    {
-        label: 'Linux',
-        imgSrc: '/images/tools/linux.svg',
-    },
+    { label: 'JavaScript', Icon: SiJavascript, color: '#F7DF1E' },
+    { label: 'TypeScript', Icon: SiTypescript, color: '#3178C6' },
+    { label: 'React', Icon: SiReact, color: '#61DAFB' },
+    { label: 'React Native', Icon: SiReact, color: '#61DAFB' },
+    { label: 'Node.js', Icon: SiNodedotjs, color: '#339933' },
+    { label: 'Express.js', Icon: SiExpress, color: '#000000' },
+    { label: 'Laravel', Icon: SiLaravel, color: '#FF2D20' },
+    { label: 'PHP', Icon: SiPhp, color: '#777BB4' },
+    { label: 'MySQL', Icon: SiMysql, color: '#4479A1' },
+    { label: 'MongoDB', Icon: SiMongodb, color: '#47A248' },
+    { label: 'Tailwind CSS', Icon: SiTailwindcss, color: '#06B6D4' },
+    { label: 'Git', Icon: SiGit, color: '#F05032' },
+    { label: 'GitHub', Icon: SiGithub, color: '#181717' },
+    { label: 'Linux', Icon: SiLinux, color: '#FCC624' },
 ];
 
 const areas: AreasType[] = [

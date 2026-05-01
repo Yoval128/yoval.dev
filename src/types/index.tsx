@@ -26,8 +26,9 @@ export type AreasType = {
 };
 
 export type ToolsType = {
-    imgSrc: string;
+    Icon: React.ElementType;
     label: string;
+    color?: string;
 };
 
 export type StatsType = {
