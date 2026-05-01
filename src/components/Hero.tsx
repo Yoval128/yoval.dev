@@ -20,7 +20,7 @@ const Hero = () => {
             </motion.p>
             <motion.h1
                 variants={fadeUp}
-                className='text-4xl md:text-5xl lg:text-6xl font-semibold mt-2 max-w-3xl md:leading-16'>
+                className='text-4xl md:text-5xl lg:text-6xl font-semibold mt-2 max-w-3xl md:leading-16 font-heading '>
                 Desarrollo sistemas, APIs y soluciones que automatizan procesos y gestionan información multiplataforma
             </motion.h1>
 
