@@ -142,8 +142,8 @@ const education: ExperienceType[] = [
 const experience: ExperienceType[] = [
     {
         year: 'Sep 2025 – Actualidad',
-        title: 'Desarrollador de Software (Educación Dual)',
-        institute: 'Programa de Educación Dual',
+        title: 'Laravel Developer Jr',
+        institute: 'German Control Motion S.A. de C.V.',
         desc: 'Participación en el desarrollo, mantenimiento y mejora de sistemas institucionales. Corrección de errores, optimización de procesos y documentación técnica. Colaboración en la implementación de mejoras para facilitar el uso y funcionamiento de las plataformas.',
     },
     {

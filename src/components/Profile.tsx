@@ -8,10 +8,10 @@ bg-card text-card-foreground
 border border-border">
             <div className="flex flex-col gap-4">
                 <div className='flex items-center justify-between gap-x-10'>
-                    <h1 className='text-3xl font-blod'>
+                    <h1 className='text-3xl font-blod font-heading'>
                         Omar Yoval Aviles
                     </h1>
-                    <p>Desarrollador FullStack Junior</p>
+                    <p className='font-sans'>Desarrollador FullStack Junior</p>
                 </div>
 
                 <img src="/hero-placeholder.jpg" alt="Profile" className='lg:w-96 rounded-2xl

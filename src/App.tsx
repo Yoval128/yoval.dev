@@ -7,7 +7,7 @@ import Contact from "@/components/Contact.tsx";
 import Resume from "@/components/Resume.tsx";
 import 'lenis/dist/lenis.css'
 import {useLenis} from "lenis/react";
-import {useEffect, useState} from "react";
+import {useEffect} from "react";
 
 export const App = () => {
 
@@ -27,21 +27,6 @@ export const App = () => {
         return () => cancelAnimationFrame(frame);
     }, [lenis]);
 
-    const [isDark, setDark] = useState(false);
-
-    const toggleTheme = () => {
-        setDark(prev=>!prev);
-    };
-
-    useEffect(() => {
-        const root = document.documentElement;
-
-        if (isDark) {
-            root.classList.add("dark");
-        } else {
-            root.classList.remove("dark");
-        }
-    }, [isDark]);
 
     return (
         <main className='flex flex-col container mx-auto p-10 max-w-4xl lg:pr-10

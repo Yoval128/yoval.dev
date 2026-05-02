@@ -1,7 +1,6 @@
 import {motion} from 'motion/react'
 import SectionHeader from "@/components/SectionHeader.tsx";
 import {fadeUp} from "@/lib/animations.ts";
-import {Button} from '@base-ui/react/button';
 
 const About = () => {
     return (
@@ -17,7 +16,7 @@ const About = () => {
                 title='Construyendo soluciones backend para problemas reales'
             />
 
-            <motion.p variants={fadeUp} className='text-neutral-300 mb-2'>
+            <motion.p variants={fadeUp} className='text-muted-foreground mb-2 mt-5'>
                 Soy desarrollador Fullstack Jr con enfoque en backend, especializado en la construcción de APIs, manejo
                 de bases de datos y lógica de negocio. Disfruto diseñar sistemas que sean funcionales, escalables y
                 fáciles de mantener.
@@ -30,7 +29,6 @@ const About = () => {
             <motion.div
                 variants={fadeUp}
                 transition={{delay: 0.2}}>
-                <Button className='mt5'>Contáctame</Button>
             </motion.div>
         </motion.section>
     )
