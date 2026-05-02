@@ -70,8 +70,8 @@ const navLinks: LinksType[] = [
         icon: Settings,
     },
     {
-        label: 'Cv',
-        link: '#currículum',
+        label: 'Resumen',
+        link: '#resume',
         icon: FileText
     },
 
@@ -80,6 +80,7 @@ const navLinks: LinksType[] = [
         link: '#contact',
         icon: Mail
     },
+
 ];
 
 const socialLinks: LinksType[] = [

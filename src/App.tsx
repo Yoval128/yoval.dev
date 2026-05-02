@@ -8,7 +8,6 @@ import Resume from "@/components/Resume.tsx";
 import 'lenis/dist/lenis.css'
 import {useLenis} from "lenis/react";
 import {useEffect, useState} from "react";
-import {Button} from "@base-ui/react/button";
 
 export const App = () => {
 
@@ -47,16 +46,6 @@ export const App = () => {
     return (
         <main className='flex flex-col container mx-auto p-10 max-w-4xl lg:pr-10
         lg:pl-0 lg:max-w-6xl'>
-            <div>
-                <div>
-                    <Button onClick={toggleTheme}
-                            className='cursor-pointer'>Cambair tema</Button>
-                </div>
-
-                <div className='bg-amber-50 dark:bg-gray-900 dark:text-blue-600'>
-                    Hola mundo
-                </div>
-            </div>
             <Hero/>
             <Stats/>
             <Projects/>
