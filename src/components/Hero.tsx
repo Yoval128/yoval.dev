@@ -11,6 +11,7 @@ const Hero = () => {
             viewport={{once: true, amount: 0.3}}
             variants={staggerContainer(0)}
             className='pt-20'
+            id='hero'
         >
             <motion.p variants={fadeUp}
                       className='flex items-center justify-center
@@ -20,11 +21,11 @@ const Hero = () => {
             </motion.p>
             <motion.h1
                 variants={fadeUp}
-                className='text-4xl md:text-5xl lg:text-6xl font-semibold mt-2 max-w-3xl md:leading-16'>
+                className='text-4xl md:text-5xl lg:text-6xl font-semibold mt-2 max-w-3xl md:leading-16 font-heading '>
                 Desarrollo sistemas, APIs y soluciones que automatizan procesos y gestionan información multiplataforma
             </motion.h1>
 
-            <motion.p variants={fadeUp} className='mt-4 text-neutral-400 max-w-2xl'>
+            <motion.p variants={fadeUp} className='mt-4 text-foreground max-w-2xl'>
                 Enfocado en Laravel, Node.js y bases de datos, construyendo aplicaciones funcionales y escalables para
                 resolver problemas reales.
             </motion.p>

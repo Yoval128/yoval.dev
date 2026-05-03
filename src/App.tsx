@@ -9,6 +9,8 @@ import 'lenis/dist/lenis.css'
 import {useLenis} from "lenis/react";
 import {useEffect} from "react";
 
+import { initTheme } from "./utils/theme";
+
 export const App = () => {
 
     const lenis = useLenis();
@@ -17,7 +19,6 @@ export const App = () => {
         if (!lenis) return;
 
         let frame: number;
-
         const raf = (time: number) => {
             lenis.raf(time);
             frame = requestAnimationFrame(raf);
@@ -27,6 +28,11 @@ export const App = () => {
 
         return () => cancelAnimationFrame(frame);
     }, [lenis]);
+
+    useEffect(() => {
+        initTheme();
+    }, []);
+
 
     return (
         <main className='flex flex-col container mx-auto p-10 max-w-4xl lg:pr-10

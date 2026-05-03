@@ -12,7 +12,7 @@ const Areas = () => {
             viewport={{once: true, amount: 0.3}}
             className='mt-30 scroll-mt-10 '
             id='areas'>
-            <SectionHeader subtitle='Áreas de especialización'
+            <SectionHeader subtitle='Áreas'
                            title='Desarrollo backend y construcción de sistemas funcionales'/>
 
 

@@ -44,12 +44,12 @@ const Contact = () => {
                     title='¿Tienes un proyecto o una oportunidad? Hablemos'
                 />
                 <form onSubmit={form.handleSubmit(onSubmit)}
-                      className='w-full mx-auto space-y-4 mt-10'>
+                      className="w-full mx-auto space-y-4 mt-10 bg-background p-2">
                     <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
                         <Field>
                             <Input
                                 placeholder='Nombre completo'
-                                className='border-0'
+                                className='bg-background border border-border text-foreground'
                                 {...form.register('name')}
                                 aria-invalid={!!form.formState.errors.name}/>
                             {form.formState.errors.name && (
@@ -62,7 +62,7 @@ const Contact = () => {
                         <Field>
                             <Input
                                 placeholder='Nombre de la compañia'
-                                className='border-0'
+                                className='bg-background border border-border text-foreground'
                                 {...form.register('company')}
                                 aria-invalid={!!form.formState.errors.company}/>
                             {form.formState.errors.company && (
@@ -76,7 +76,7 @@ const Contact = () => {
                             <Input
                                 type='email'
                                 placeholder='Correo electronico'
-                                className='border-0'
+                                className='bg-background border border-border text-foreground'
                                 {...form.register('email')}
                                 aria-invalid={!!form.formState.errors.email}/>
                             {form.formState.errors.email && (
@@ -91,7 +91,7 @@ const Contact = () => {
                             <Input
                                 type='tel'
                                 placeholder='Telefono'
-                                className='border-0'
+                                className='bg-background border border-border text-foreground'
                                 {...form.register('phone')}
                                 aria-invalid={!!form.formState.errors.phone}/>
                             {form.formState.errors.phone && (
@@ -104,7 +104,7 @@ const Contact = () => {
                     <Field>
                         <Textarea
                             placeholder='Escribe tu mensaje'
-                            className='h-36 border-0'
+                            className="h-36 bg-background border border-border text-foreground"
                             {...form.register('message')}
                             aria-invalid={!!form.formState.errors.message}/>
                         {form.formState.errors.message && (
@@ -113,7 +113,9 @@ const Contact = () => {
                             </FieldError>
                         )}
                     </Field>
-                    <Button type='submit' size='lg'>Enviar mensaje</Button>
+                    <Button type='submit' className='bg-primary text-primary-foreground' size='lg'>
+                        Enviar mensaje
+                    </Button>
                 </form>
             </motion.section>
         )

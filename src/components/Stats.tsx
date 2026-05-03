@@ -20,7 +20,7 @@ const Stats = () => {
                     <p className="text-4xl capitalize font-bold lining-nums">
                         {stats.number}
                     </p>
-                    <p className="text-neutral-300">
+                    <p className="text-muted-foreground">
                         {stats.label}
                     </p>
                 </motion.div>

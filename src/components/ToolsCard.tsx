@@ -8,12 +8,16 @@ const ToolsCard = ({ tool }: { tool: ToolsType }) => {
     return (
         <motion.div
             variants={fadeUp}
-            className="border border-neutral-700 rounded-md
-            flex justify-center items-center flex-col py-4"
-        >
+            className="border border-border
+                rounded-md
+                flex flex-col items-center justify-center
+                py-4
+                bg-card
+                hover:bg-accent/30
+                transition">
             <Icon size={32} color={color} />
 
-            <p className='font-bold mt-2'>{label}</p>
+            <p className='font-semibold mt-2 text-foreground'>{label}</p>
         </motion.div>
     );
 };

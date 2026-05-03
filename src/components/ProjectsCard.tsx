@@ -13,7 +13,7 @@ const ProjectsCard = ({
             variants={fadeUp}
             className="relative block"
         >
-            <figure className="overflow-hidden rounded-dm">
+            <figure className="overflow-hidden rounded-md">
                 <img
                     src={imgSrc}
                     alt={title}
@@ -21,12 +21,13 @@ const ProjectsCard = ({
                 />
             </figure>
 
-            <div className="absolute bottom-0 p-2 flex gap-2">
+            <div className="absolute bottom-0 p-2 flex flex-wrap gap-2 max-w-full">
                 {tags.map((tag, i) => (
                     <span
                         key={i}
-                        className="bg-background hover:bg-primary hover:text-black py-1 px-2 rounded-sm text-sm cursor-pointer"
-                    >
+                        className=' bg-background hover:bg-primary text-xs sm:text-sm md:text-base
+                        py-0.5 px-1.5 sm:py-1 sm:px-2 rounded-sm cursor-pointer
+                        hover:text-primary-foreground'>
             {tag}
           </span>
                 ))}
