@@ -31,6 +31,7 @@ const Contact = () => {
         },
     });
 
+
     const onSubmit = async (values: contactFormValues) => {
         try {
             setLoading(true);
@@ -114,8 +115,32 @@ const Contact = () => {
                         <Input
                             type="tel"
                             placeholder="Teléfono"
-                            {...form.register("phone")}
+                            inputMode="numeric"
+                            {...form.register("phone", {
+                                required: "El teléfono es obligatorio",
+                                pattern: {
+                                    value: /^[0-9]+$/,
+                                    message: "Solo se permiten números",
+                                },
+                                minLength: {
+                                    value: 10,
+                                    message: "Debe tener al menos 10 dígitos",
+                                },
+                                maxLength: {
+                                    value: 15,
+                                    message: "Máximo 15 dígitos",
+                                },
+                            })}
+                            onChange={(e) => {
+                                e.target.value = e.target.value.replace(/\D/g, "");
+                            }}
                         />
+
+                        {form.formState.errors.phone && (
+                            <FieldError>
+                                {form.formState.errors.phone.message}
+                            </FieldError>
+                        )}
                     </Field>
 
                 </div>
