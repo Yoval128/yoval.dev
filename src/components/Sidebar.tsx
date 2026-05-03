@@ -3,6 +3,7 @@ import {Button} from "@/components/ui/button.tsx";
 import {MenuIcon} from "lucide-react";
 import {useState} from "react";
 import {navLinks, socialLinks} from "@/constants";
+import ThemeToggle from "@/components/ThemeToggle.tsx";
 
 const Sidebar = () => {
 
@@ -11,21 +12,28 @@ const Sidebar = () => {
     return (
         <>
             <Sheet>
-                <SheetTrigger>
-                    <Button
-                        variant="ghost"
-                        size="icon"
-                        className="mr-4 fixed top-4 right-4 z-50
-border-2
-bg-white dark:bg-neutral-800
-border-neutral-300 dark:border-neutral-700
-hover:border-primary
-py-5 rounded-full
-text-black dark:text-white
-hover:text-primary cursor-pointer  ">
-                        <MenuIcon size={30}/>
-                    </Button>
-                </SheetTrigger>
+                <div className="fixed top-4 right-4 z-50 flex items-center gap-3">
+
+                    <div className="border-2 bg-white dark:bg-neutral-800 border-neutral-300
+      dark:border-neutral-700 hover:border-primary
+      py-1 rounded-full text-black dark:text-white
+      hover:text-primary cursor-pointer">
+                        <ThemeToggle />
+                    </div>
+
+                    <SheetTrigger>
+                        <Button
+                            variant="ghost"
+                            size="icon"
+                            className="border-2 bg-white dark:bg-neutral-800 border-neutral-300
+      dark:border-neutral-700 hover:border-primary
+      py-5 rounded-full text-black dark:text-white
+      hover:text-primary cursor-pointer">
+                            <MenuIcon size={30} />
+                        </Button>
+                    </SheetTrigger>
+
+                </div>
 
                 <SheetContent
                     side='right'
@@ -33,6 +41,7 @@ hover:text-primary cursor-pointer  ">
                     <SheetTitle className='text-lg font-semibold'>
                         Menu
                     </SheetTitle>
+
                     <nav className="flex flex-col gap-4">
                         {navLinks.map((link) => {
                             const Icon = link.icon;
@@ -53,7 +62,7 @@ hover:text-primary cursor-pointer  ">
                         })}
                     </nav>
 
-                    <div className="mt-30">
+                    <div className="mt-20">
                         <p className="pb-2">Redes Sociales</p>
                         <div className="flex gap-3 text-neutral-500 dark:text-neutral-400">
                             {socialLinks.map((social, i) => {
@@ -61,16 +70,16 @@ hover:text-primary cursor-pointer  ">
                                 return (
                                     <a key={i}
                                        href={social.link}
-                                       className='hover:text-primary border-2
-border-neutral-300 dark:border-neutral-500
-p-2 rounded-full hover:border-primary
-transition duration-200'>
+                                       className='hover:text-primary border-2 border-neutral-300
+                                        dark:border-neutral-500 p-2 rounded-full hover:border-primary
+                                        transition duration-200'>
                                         <Icon className="size-4"/>
                                     </a>
                                 );
                             })}
                         </div>
                     </div>
+
                 </SheetContent>
             </Sheet>
         </>

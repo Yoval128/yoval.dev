@@ -1,22 +1,34 @@
 import { Button } from "@/components/ui/button";
-import { Moon, Sun } from "lucide-react";
+import { Moon, Sun, Monitor } from "lucide-react";
 import { useTheme } from "@/hooks/useTheme";
 
 const ThemeToggle = () => {
+    const { theme, mode, setMode } = useTheme();
 
-    const { theme, toggleTheme } = useTheme();
+    const handleToggle = () => {
+        setMode((prev) => {
+            if (prev === "auto") return "dark";   // sales de auto
+            if (prev === "dark") return "light";
+            return "auto"; // vuelves a auto
+        });
+    };
 
     return (
         <Button
-            onClick={toggleTheme}
+            onClick={handleToggle}
             variant="ghost"
             size="icon"
-            className="bg-white dark:bg-neutral-800
-                       text-black dark:text-white
-                       border border-neutral-300 dark:border-neutral-600
-                       rounded-full"
+            className="bg-card text-foreground
+            border border-border
+            rounded-full hover:text-primary transition"
         >
-            {theme === "dark" ? <Sun /> : <Moon />}
+            {mode === "auto" ? (
+                <Monitor />
+            ) : theme === "dark" ? (
+                <Sun />
+            ) : (
+                <Moon />
+            )}
         </Button>
     );
 };

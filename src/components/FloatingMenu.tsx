@@ -1,7 +1,6 @@
 import {useState} from "react";
 import {navLinks} from "@/constants";
 import {cn} from "@/lib/utils.ts";
-import ThemeToggle from "@/components/ThemeToggle.tsx";
 
 const FloatingMenu = () => {
 
@@ -25,13 +24,6 @@ const FloatingMenu = () => {
                         </a>
                     )
                 })}
-            </div>
-            <div className="fixed right-10 top-1/5 -translate-y-1/2
-            bg-white dark:bg-black
-            border border-neutral-300 dark:border-neutral-600
-            p-3 flex items-center justify-center
-            rounded-full z-10 hidden lg:block">
-                <ThemeToggle/>
             </div>
         </div>
 

@@ -9,6 +9,8 @@ import 'lenis/dist/lenis.css'
 import {useLenis} from "lenis/react";
 import {useEffect} from "react";
 
+import { initTheme } from "./utils/theme";
+
 export const App = () => {
 
     const lenis = useLenis();
@@ -26,6 +28,10 @@ export const App = () => {
 
         return () => cancelAnimationFrame(frame);
     }, [lenis]);
+
+    useEffect(() => {
+        initTheme();
+    }, []);
 
 
     return (
