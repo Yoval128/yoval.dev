@@ -25,11 +25,12 @@ const Projects = () => {
             variants={staggerContainer(0.5)}>
                 {projectsData.map((project, i) => (
                     <ProjectsCard
-                    key={i}
-                    imgSrc={project.imgSrc}
-                    projectLink={project.projectLink}
-                    tags={project.tags}
-                    title={project.title}
+                        key={i}
+                        imgSrc={project.imgSrc}
+                        projectLink={project.projectLink}
+                        documentationLink={project.documentationLink}
+                        tags={project.tags}
+                        title={project.title}
                     />
                 ))}
 

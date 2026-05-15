@@ -5,11 +5,33 @@
 
 import type { JSX } from 'react';
 
+
 export type ProjectType = {
-    imgSrc: string;
+    slug: string;
+
     title: string;
+
+    imgSrc: string;
+
     tags: string[];
-    projectLink: string;
+
+    technologies: string[];
+
+    description: string;
+
+    modules: ModuleType[];
+
+    projectLink?: string;
+
+    githubLink?: string;
+
+    documentationLink: string;
+
+    features?: string[];
+
+    challenges?: string[];
+
+    architectureImage?: string;
 };
 
 export type ExperienceType = {
@@ -49,3 +71,11 @@ export type LinksType = {
     link: string;
     icon: React.ElementType;
 };
+
+export type ModuleType = {
+    title: string;
+    description: string;
+    image: string;
+};
+
+

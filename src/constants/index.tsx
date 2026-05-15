@@ -103,18 +103,21 @@ const projectsData: ProjectType[] = [
         title: 'Sistema de control de acceso RFID (IoT)',
         tags: ['Node.js', 'React Native', 'ESP32', 'REST API'],
         projectLink: 'https://tu-link-rfid.com',
+        documentationLink: '/projects/sistema-control-acceso-rfid',
     },
     {
         imgSrc: '/images/project-ph-2.jpeg',
         title: 'Sistema de gestión documental',
         tags: ['Laravel', 'MySQL', 'Backend'],
         projectLink: 'https://tu-link-documental.com',
+        documentationLink: 'https://tu-link-rfid.com',
     },
     {
         imgSrc: '/images/project-ph-3.jpeg',
         title: 'Sistema de seguimiento académico',
         tags: ['Laravel', 'MySQL', 'API'],
         projectLink: 'https://tu-link-academico.com',
+        documentationLink: 'https://tu-link-rfid.com',
     },
 ];
 
