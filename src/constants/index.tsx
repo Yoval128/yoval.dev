@@ -141,22 +141,36 @@ const education: ExperienceType[] = [
 
 const experience: ExperienceType[] = [
     {
+        year: 'May 2026 – Ago 2026',
+        title: 'Analista de Requerimientos de Software',
+        institute: 'Instituto Universitario Franco Inglés de México, S.C.',
+        desc: 'Ejecuté el levantamiento de requerimientos y el modelado UML para la migración de 32 procesos críticos** (académicos y administrativos) de un sistema legado al actual. ' +
+            'Traduje las necesidades del área de Control Escolar de la institución en reglas de negocio claras, reduciendo la ambigüedad para el equipo de desarrollo. ' +
+            'Además, participé en el análisis, diseño y modelado de constancias académicas mediante Crystal Reports, definiendo su estructura, información y reglas de generación.'
+    },
+    {
         year: 'Sep 2025 – Actualidad',
         title: 'Laravel Developer Jr',
-        institute: 'German Control Motion S.A. de C.V.',
-        desc: 'Participación en el desarrollo, mantenimiento y mejora de sistemas institucionales. Corrección de errores, optimización de procesos y documentación técnica. Colaboración en la implementación de mejoras para facilitar el uso y funcionamiento de las plataformas.',
+        institute: 'Universidad Tecnológica del Valle de Toluca',
+        desc: 'Desarrollé y optimicé módulos en sistemas institucionales utilizando Laravel, logrando reducir los tiempos de ' +
+            'carga/procesamiento en un 100%. Resolví más de 50 bugs reportados, mejorando la estabilidad de la ' +
+            'plataforma para más de 80 usuarios, y redacté documentación técnica que aceleró el onboarding de nuevos ' +
+            'integrantes al equipo',
     },
     {
         year: 'Ene 2025 – Abr 2025',
-        title: 'Desarrollador Fullstack (Proyecto RFID + IoT)',
+        title: 'Desarrollador Fullstack',
         institute: 'Proyecto académico',
         desc: 'Desarrollo de aplicación móvil con React Native integrada con un backend en Node.js y dispositivos ESP32. Implementación de autenticación mediante RFID/NFC, así como funcionalidades de gestión de datos, filtros y dashboards por usuario.',
     },
     {
         year: 'Sep 2024 – Dic 2024',
         title: 'Desarrollador Backend (Laravel)',
-        institute: 'Proyecto en entorno gubernamental',
-        desc: 'Desarrollo de sistema de gestión documental utilizando Laravel y MySQL. Implementación de roles y permisos, diseño de base de datos y lógica backend para la digitalización y organización de documentos institucionales.',
+        institute: 'Proyecto académico',
+        desc: 'Lideré el diseño de la base de datos e implementé el backend completo de un sistema de gestión documental ' +
+            'gubernamental desde cero con Laravel y MySQL. Esto permitió la digitalización exitosa más de 1000 documentos mensuales, ' +
+            'reduciendo el tiempo de búsqueda manual de archivos en un estimado del 90% y asegurando la información mediante un ' +
+            'estricto control de roles y permisos.',
     },
 ];
 
@@ -166,11 +180,8 @@ const tools: ToolsType[] = [
     { label: 'React', Icon: SiReact, color: '#61DAFB' },
     { label: 'React Native', Icon: SiReact, color: '#61DAFB' },
     { label: 'Node.js', Icon: SiNodedotjs, color: '#339933' },
-    { label: 'Express.js', Icon: SiExpress, color: '#000000' },
     { label: 'Laravel', Icon: SiLaravel, color: '#FF2D20' },
-    { label: 'PHP', Icon: SiPhp, color: '#777BB4' },
     { label: 'MySQL', Icon: SiMysql, color: '#4479A1' },
-    { label: 'MongoDB', Icon: SiMongodb, color: '#47A248' },
     { label: 'Tailwind CSS', Icon: SiTailwindcss, color: '#06B6D4' },
     { label: 'Git', Icon: SiGit, color: '#F05032' },
     { label: 'GitHub', Icon: SiGithub, color: '#181717' },
@@ -201,7 +212,7 @@ const areas: AreasType[] = [
 ];
 const statsData: StatsType[] = [
     {
-        number: '10+',
+        number: '3+',
         label: 'Proyectos desarrollados',
     },
     {

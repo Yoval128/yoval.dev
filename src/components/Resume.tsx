@@ -16,7 +16,7 @@ const Resume = () => {
 
             <SectionHeader
                 subtitle='Resumen'
-                title='Formación y experiencia en desarrollo de software'
+                title='Formación y Experiencia en desarrollo de software'
             />
 
             <motion.p variants={fadeUp} className='mt-4 text-muted-foreground'>
@@ -44,7 +44,7 @@ const Resume = () => {
 
                 <motion.div
                     variants={fadeUp}>
-                    <h2 className="text-3xl font-semibold mt-8 text-foreground font-heading">Experencia Profecional</h2>
+                    <h2 className="text-3xl font-semibold mt-8 text-foreground font-heading">Experiencia Profesional</h2>
                     <div className="space-y-0 border border-border pl-6 mt-4">
                         {experience.map((item, i) => (
                             <ExpCard
@@ -59,7 +59,7 @@ const Resume = () => {
                 <motion.h2
                     variants={fadeUp}
                     className="text-3xl font-semibold mb-8 capitalize text-foreground font-heading">
-                    Mis Harraientas favoritas
+                    Mis Herramientas Favoritas
                 </motion.h2>
 
                 <motion.div
