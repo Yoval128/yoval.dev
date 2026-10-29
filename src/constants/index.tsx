@@ -100,22 +100,36 @@ const socialLinks: LinksType[] = [
 
 const projectsData: ProjectType[] = [
     {
+        title: "API RESTful Empresarial con .NET 8 y Azure",
+        imgSrc: "/images/project-ph-1.jpeg",
+        tags: [
+            ".NET 8",
+            "C#",
+            "SQL Server",
+            "Entity Framework",
+            "JWT",
+            "Mapster",
+            "Azure App Service",
+            "Azure SQL",
+            "Swagger",
+            "Postman"
+        ],
+        projectLink: '',
+        repositoryLink: 'https://github.com/Yoval128/app-arycontrolaccess',
+    },
+    {
         imgSrc: '/images/project-ph-1.jpeg',
         title: 'Sistema de control de acceso RFID (IoT)',
         tags: ['Node.js', 'React Native', 'ESP32', 'REST API'],
-        projectLink: 'https://tu-link-rfid.com',
+        projectLink: '',
+        repositoryLink: 'https://github.com/Yoval128/app-arycontrolaccess',
     },
     {
         imgSrc: '/images/project-ph-2.jpeg',
         title: 'Sistema de gestión documental',
         tags: ['Laravel', 'MySQL', 'Backend'],
-        projectLink: 'https://tu-link-documental.com',
-    },
-    {
-        imgSrc: '/images/project-ph-3.jpeg',
-        title: 'Sistema de seguimiento académico',
-        tags: ['Laravel', 'MySQL', 'API'],
-        projectLink: 'https://tu-link-academico.com',
+        projectLink: '',
+        repositoryLink: 'https://github.com/Yoval128/SistemaDocumental',
     },
 ];
 

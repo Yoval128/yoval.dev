@@ -26,8 +26,8 @@ const Hero = () => {
             </motion.h1>
 
             <motion.p variants={fadeUp} className='mt-4 text-foreground max-w-2xl'>
-                Enfocado en Laravel, Node.js y bases de datos, construyendo aplicaciones funcionales y escalables para
-                resolver problemas reales.
+                Desarrollador Full Stack Jr. con experiencia en el desarrollo de aplicaciones web y móviles utilizando
+                Laravel, Node.js, React.js, React Native y MySQL.
             </motion.p>
             <motion.div variants={fadeUp} className='mt-5 flex gap-2'>
                 <Button>
