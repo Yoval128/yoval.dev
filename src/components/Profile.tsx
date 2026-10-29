@@ -45,7 +45,8 @@ border border-border">
                     })}
                 </div>
                 <Button className='mt-2' size='lg'>
-                    ¡Trabajemos juntos!
+
+                    <a href="#contact"> ¡Trabajemos juntos!</a>
                 </Button>
             </div>
         </aside>
