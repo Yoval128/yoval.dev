@@ -115,7 +115,7 @@ const projectsData: ProjectType[] = [
             "Postman"
         ],
         projectLink: '',
-        repositoryLink: 'https://github.com/Yoval128/app-arycontrolaccess',
+        repositoryLink: 'https://github.com/Yoval128/ApiEcommerce',
     },
     {
         imgSrc: '/images/project-ph-1.jpeg',
