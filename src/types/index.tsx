@@ -49,3 +49,12 @@ export type LinksType = {
     link: string;
     icon: React.ElementType;
 };
+
+export type CertificateType = {
+    title: string;
+    institution: string;
+    date: string;
+    inProgress?: boolean;
+    credentialUrl?: string;
+    skills?: string[];
+};

@@ -7,7 +7,7 @@
  * Types
  */
 import type {
-    AreasType,
+    AreasType, CertificateType,
     ExperienceType,
     LinksType,
     ProjectType,
@@ -41,9 +41,13 @@ import {
     SiGit,
     SiGithub,
     SiLinux,
-} from 'react-icons/si';
-
-import {FaGithub, FaLinkedin} from 'react-icons/fa';
+    SiPostman,
+    SiJira,
+    SiNotion,
+    SiDotnet,
+} from "react-icons/si";
+import { FaJava } from "react-icons/fa6";
+import {FaGithub, FaLinkedin, FaCuttlefish} from 'react-icons/fa';
 
 const navLinks: LinksType[] = [
     {
@@ -177,11 +181,17 @@ const tools: ToolsType[] = [
     { label: 'React', Icon: SiReact, color: '#61DAFB' },
     { label: 'React Native', Icon: SiReact, color: '#61DAFB' },
     { label: 'Node.js', Icon: SiNodedotjs, color: '#339933' },
+    { label: 'Java', Icon: FaJava, color: '#ED8B00' },
+    { label: 'C#', Icon: FaCuttlefish, color: '#239120' },
+    { label: '.NET', Icon: SiDotnet, color: '#512BD4' },
     { label: 'Laravel', Icon: SiLaravel, color: '#FF2D20' },
     { label: 'MySQL', Icon: SiMysql, color: '#4479A1' },
     { label: 'Tailwind CSS', Icon: SiTailwindcss, color: '#06B6D4' },
     { label: 'Git', Icon: SiGit, color: '#F05032' },
     { label: 'GitHub', Icon: SiGithub, color: '#181717' },
+    { label: 'Postman', Icon: SiPostman, color: '#FF6C37' },
+    { label: 'Jira', Icon: SiJira, color: '#0052CC' },
+    { label: 'Notion', Icon: SiNotion, color: '#000000' },
     { label: 'Linux', Icon: SiLinux, color: '#FCC624' },
 ];
 
@@ -232,6 +242,57 @@ const testimonials: TestimonialsType[] = [
     },
 ];
 
+const certificates: CertificateType[] = [
+    {
+        title: "MERN Stack Full Stack Application",
+        institution: "Udemy",
+        date: "2026",
+        credentialUrl: "/docs/certificates/mern-edition.jpg",
+        skills: [
+            "React Router 6",
+            "React Query",
+            "MongoDB / Mongoose",
+            "Node.js",
+            "Express",
+            "JWT",
+            "Axios",
+            "Render / Heroku"
+        ]
+    },
+    {
+        title: ".NET Backend: .NET Core 8, SQL Server y JWT",
+        institution: "Udemy",
+        date: "2026",
+        credentialUrl: "/docs/certificates/net-core.jpg",
+        skills: [
+            ".NET Core 8",
+            "C#",
+            "SQL Server",
+            "Entity Framework",
+            "JWT",
+            "API RESTful",
+            "Patrón Repositorio"
+        ]
+    },
+    {
+        title: "Java & Spring Boot: Monolitos, APIs REST, JWT y Docker",
+        institution: "Udemy",
+        date: "En curso",
+        credentialUrl: "",
+        skills: [
+            "Java",
+            "Spring Boot",
+            "Spring Security",
+            "JWT",
+            "Spring Data JPA",
+            "Thymeleaf",
+            "PostgreSQL",
+            "Docker",
+            "Testing (Mockito/MockMvc)"
+        ]
+    },
+];
+
 export {
     socialLinks,
     projectsData,
@@ -242,4 +303,5 @@ export {
     navLinks,
     statsData,
     testimonials,
+    certificates,
 };

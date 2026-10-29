@@ -80,10 +80,9 @@ const Contact = () => {
 
             <form
                 onSubmit={form.handleSubmit(onSubmit)}
-                className="w-full mx-auto space-y-4 mt-10 bg-background p-2"
+                className="w-full max-w-2xl space-y-5 mt-10 p-8 rounded-2xl border border-border bg-card shadow-sm hover:border-primary/50 transition-colors"
             >
-                <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
-
+                <div className="grid grid-cols-1 gap-5 md:grid-cols-2">
                     <Field>
                         <Input
                             placeholder="Nombre completo"
@@ -142,13 +141,12 @@ const Contact = () => {
                             </FieldError>
                         )}
                     </Field>
-
                 </div>
 
                 <Field>
                     <Textarea
                         placeholder="Escribe tu mensaje"
-                        className="h-36"
+                        className="h-36 resize-none"
                         {...form.register("message")}
                     />
                 </Field>
@@ -156,6 +154,7 @@ const Contact = () => {
                 <Button
                     type="submit"
                     size="lg"
+                    className="w-full sm:w-auto"
                     disabled={loading}
                 >
                     {loading ? "Enviando..." : "Enviar mensaje"}

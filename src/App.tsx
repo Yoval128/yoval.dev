@@ -10,6 +10,7 @@ import {useLenis} from "lenis/react";
 import {useEffect} from "react";
 
 import { initTheme } from "./utils/theme";
+import Courses from "@/components/Courses.tsx";
 
 export const App = () => {
 
@@ -42,6 +43,7 @@ export const App = () => {
             <Projects/>
             <About/>
             <Areas/>
+            <Courses/>
             <Resume/>
             <Contact/>
         </main>
